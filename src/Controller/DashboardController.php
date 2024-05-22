@@ -14,6 +14,12 @@ class DashboardController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
+
+     public function initialize(): void
+     {
+         parent::initialize();
+         $this->viewBuilder()->setLayout('ajax'); // Set a blank layout
+     }
     public function userdashboard()
     {
         $this->render('userdashboard');
@@ -23,6 +29,13 @@ class DashboardController extends AppController
     {
         $this->render('admindashboard');
       
+    }
+    public function createlisting()
+    {
+        $this->viewBuilder()->disableAutoLayout(); 
+        $this->render('createlisting');
+        
+        
     }
 
    

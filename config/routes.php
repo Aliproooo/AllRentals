@@ -23,7 +23,7 @@
 
 use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
-
+use Cake\Routing\Router;
 /*
  * This file is loaded in the context of the `Application` class.
   * So you can use  `$this` to reference the application class instance
@@ -61,7 +61,6 @@ return function (RouteBuilder $routes): void {
          * ...and connect the rest of 'Pages' controller's URLs.
          */
         $builder->connect('/pages/*', 'Pages::display');
-
         /*
          * Connect catchall routes for all controllers.
          *

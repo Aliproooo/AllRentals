@@ -1,209 +1,14 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 
-<head> 
-	<meta charset="UTF-8"> 
-	<meta http-equiv="X-UA-Compatible"
-		content="IE=edge"> 
-	<meta name="viewport"
-		content="width=device-width, 
-				initial-scale=1.0"> 
-	<title>GeeksForGeeks</title> 
-	<link rel="stylesheet"
-		href="style.css"> 
-	<link rel="stylesheet"
-		href="responsive.css"> 
-
-        <script>
-            
-let menuicn = document.querySelector(".menuicn"); 
-let nav = document.querySelector(".navcontainer"); 
-  
-menuicn.addEventListener("click", () => { 
-    nav.classList.toggle("navclose"); 
-})
-
-
-function logout() {
-        // Assuming your UsersController's logout action is accessible via /users/logout
-        window.location.href = "<?php echo $this->Url->build(['controller' => 'Users', 'action' => 'logout']); ?>";
-    }
-            </script>
-
-
-
-</head> 
-
-<body> 
-	
-
-	<div class="header"> 
-
-		<div class="logosec"> 
-			<img src= "https://dev.allrentals.com.au/webroot/img/logo.png"
-				class="icn menuicn"
-				id="menuicn"
-				alt="menu-icon"> 
-		</div> 
-
-		<div class="searchbar"> 
-			<input type="text"
-				placeholder="Search"> 
-			<div class="searchbtn"> 
-			<img src= 
-"../webroot/img/search.png"
-					class="icn srchicn"
-					alt="search-icon"> 
-			</div> 
-		</div> 
-
-		<div class="message"> 
-			<div class="circle"></div> 
-			<img src= 
-			"../webroot/img/notification.png"				
-			class="icn"
-				alt=""> 
-			<div class="dp"> 
-			<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
-					class="dpicn"
-					alt="dp"> 
-			</div> 
-		</div> 
-
-	</div> 
-
-	<div class="main-container"> 
-		<div class="navcontainer"> 
-			<nav class="nav"> 
-				<div class="nav-upper-options"> 
-					<div class="nav-option option1"> 
-						<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
-							class="nav-img"
-							alt="dashboard"> 
-						<h3>Create New Listing</h3> 
-					</div> 
-
-					<div class="option2 nav-option"> 
-						<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
-							class="nav-img"
-							alt="articles"> 
-						<h3>My Listings</h3> 
-					</div> 
-
-					<div class="nav-option option3"> 
-						<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
-							class="nav-img"
-							alt="report"> 
-						<h3>Engagement</h3> 
-					</div> 
-
-					<div class="nav-option option4"> 
-						<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
-							class="nav-img"
-							alt="institution"> 
-						<h3>Financials</h3> 
-					</div> 
-
-					<div class="nav-option option5"> 
-						<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
-							class="nav-img"
-							alt="blog"> 
-						<h3>Support Chat</h3> 
-					</div> 
-
-					<div class="nav-option option6"> 
-						<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
-							class="nav-img"
-							alt="settings"> 
-						<h3>Account Settings</h3> 
-					</div> 
-					<div class="nav-option logout" onclick="logout()">
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png" class="nav-img" alt="logout"> 
-    <h3>Logout</h3> 
-</div>
-
-				</div> 
-			</nav> 
-		</div> 
-		<div class="main1"> 
-
-			<div class="searchbar2"> 
-				<input type="text"
-					name=""
-					id=""
-					placeholder="Search"> 
-				<div class="searchbtn"> 
-				<img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-						class="icn srchicn"
-						alt="search-button"> 
-				</div> 
-			</div> 
-
-			<div class="box-container"> 
-
-            <div class="box box1"> 
-    <div class="text"> 
-        <h2 class="topic-heading">60.5k</h2> 
-        <h2 class="topic">Article Views</h2> 
-    </div> 
-
-   <img src= 
-"../webroot/img/views.png"
-						 alt="likes">
-
-</div>
-
-				<div class="box box2"> 
-					<div class="text"> 
-						<h2 class="topic-heading">150</h2> 
-						<h2 class="topic">Likes</h2> 
-					</div> 
-
-					<img src= 
-"../webroot/img/like.png"
-						alt="likes"> 
-				</div> 
-
-				<div class="box box3"> 
-					<div class="text"> 
-						<h2 class="topic-heading">320</h2> 
-						<h2 class="topic">Comments</h2> 
-					</div> 
-
-					<img src= 
-					"../webroot/img/comment.png"
-
-						alt="comments"> 
-				</div> 
-
-				<div class="box box4"> 
-					<div class="text"> 
-						<h2 class="topic-heading">70</h2> 
-						<h2 class="topic">Published</h2> 
-					</div> 
-
-					<img src= 
-					"../webroot/img/tick.png"
- alt="published"> 
-				</div> 
-			</div> 
-
-			
-		</div> 
-	</div> 
-
-	<script src="./index.js"></script> 
-</body> 
-</html>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
 
 <style>
     /* Main CSS Here */
@@ -332,7 +137,7 @@ z-index: 1;
 height: 42px; 
 } 
 
-.main1 { 
+.content{ 
 height: calc(100vh - 70px); 
 width: 100%; 
 overflow-y: scroll; 
@@ -358,6 +163,9 @@ align-items: center;
 flex-wrap: wrap; 
 gap: 50px; 
 } 
+.selected {
+    background-color: #D3AF1F;
+}
 .nav { 
 min-height: 91vh; 
 width: 250px; 
@@ -413,8 +221,8 @@ gap: 30px;
 
 .option1 { 
 border-left: 5px solid #010058af; 
-background-color: var(--Border-color); 
-color: white; 
+
+color: black; 
 cursor: pointer; 
 } 
 .option1:hover { 
@@ -727,6 +535,104 @@ border-radius: 4px;
 height: 100%;
 
 }
-
-
 </style>
+<body>
+
+<div class="header">
+    <div class="logosec">
+        <img src="https://dev.allrentals.com.au/webroot/img/logo.png" class="icn menuicn" id="menuicn" alt="menu-icon">
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Search">
+        <div class="searchbtn">
+            <img src="../webroot/img/search.png" class="icn srchicn" alt="search-icon">
+        </div>
+    </div>
+    <div class="message">
+        <div class="circle"></div>
+        <img src="../webroot/img/notification.png" class="icn" alt="">
+        <div class="dp">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png" class="dpicn" alt="dp">
+        </div>
+    </div>
+</div>
+
+<div class="main-container">
+    <div class="navcontainer">
+        <nav class="nav">
+            <div class="nav-upper-options">
+                <div class="nav-option option1" data-action="createlisting">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png" class="nav-img" alt="dashboard">
+                    <h3>Create New Listing</h3>
+                </div>
+                <div class="nav-option option2" data-action="myListings">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png" class="nav-img" alt="articles">
+                    <h3>My Listings</h3>
+                </div>
+                <div class="nav-option option3" data-action="engagement">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png" class="nav-img" alt="report">
+                    <h3>Engagement</h3>
+                </div>
+                <div class="nav-option option4" data-action="financials">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png" class="nav-img" alt="institution">
+                    <h3>Financials</h3>
+                </div>
+                <div class="nav-option option5" data-action="supportChat">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png" class="nav-img" alt="blog">
+                    <h3>Support Chat</h3>
+                </div>
+                <div class="nav-option option6" data-action="accountSettings">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png" class="nav-img" alt="settings">
+                    <h3>Account Settings</h3>
+                </div>
+                <div class="nav-option logout" onclick="logout()">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png" class="nav-img" alt="logout">
+                    <h3>Logout</h3>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content" id="content"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  
+
+    $('.nav-option').click(function() {
+        var action = $(this).data('action');
+        loadContent(action);
+    });
+
+    
+    function loadContent(action) {
+        console.log("action:", action);
+        var baseUrl = '<?php echo $this->Url->build('/', ['fullBase' => false]); ?>';
+        var url = baseUrl + 'dashboard/' + action;
+        console.log("Constructed URL:", url); // Debug: Check the constructed URL
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(response) {
+                $('#content').html(response);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error loading content:', error);
+            }
+        });
+    }
+    $('.nav-option').click(function() {
+        $('.nav-option').removeClass('selected');
+        $(this).addClass('selected');
+    });
+});
+
+function logout() {
+    window.location.href = "<?php echo $this->Url->build(['controller' => 'Users', 'action' => 'logout']); ?>";
+}
+</script>
+
+</body>
+</html>
+
