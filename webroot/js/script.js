@@ -14,6 +14,7 @@ $(document).ready(function() {
 function initializeMultiStepForm() {
     const steps = document.querySelectorAll('.step');
     let currentStep = 0;
+    
 
     // Your existing JavaScript code here...
 
