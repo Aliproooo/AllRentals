@@ -73,7 +73,7 @@
 }
 
 .container_step1 {
-  max-width: 500px;
+  max-width: 800px;
   margin: 50px auto;
   padding: 20px;
   background-color: #fff;
@@ -325,6 +325,7 @@
 <div class="container_step1" id="step1">
   <form id="step1_form">
     <div class="form-group">
+      <h3 style="color:#ff00ff">Sit back and let our AI technology pave the way to your ideal location.</h3>
       <label for="address">Enter Address:</label>
       <input type="text" id="address" placeholder="Enter your street address here to get started" required>
     </div>
@@ -585,7 +586,7 @@
     <label for="inspection-start-time">Inspection Start Time:</label>
     <input type="date" id="inspection-start-time" name="inspection-start-time">
     <label for="inspection-end-time">Inspection End Time:</label>
-    <input type="date" id="inspection-end-time" name="inspection-end-time">
+    <input type="time" id="inspection-end-time" name="inspection-end-time">
     <button type="button" id="add-time-btn" onclick="addTime()">ADD THIS TIME</button>
   </form>
   <div id="success-message" class="success-message"></div>
